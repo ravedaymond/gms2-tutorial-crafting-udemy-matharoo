@@ -12,6 +12,9 @@ if(keyboard_check_pressed(vk_escape)) {
 		if(surface_exists(pauseSurface)) {
 			surface_free(pauseSurface);	
 		}
+		
+		// Remove inventory GUI
+		event_user(1);
 	} else {
 		gamePaused = true;
 		
@@ -24,5 +27,8 @@ if(keyboard_check_pressed(vk_escape)) {
 		
 		// Copy application_surface
 		surface_copy(pauseSurface, 0, 0, application_surface);
+		
+		// Create inventory GUI
+		event_user(0);
 	}
 }
