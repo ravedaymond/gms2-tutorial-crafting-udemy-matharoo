@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dee19a79-4eb9-4975-8ff7-56b8ec1d8463","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Resources",
-    "path": "folders/Sprites/Resources.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWood",

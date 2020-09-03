@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"278f7c3c-c0f3-46ed-98da-f7aa8bc1bb00","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Resources",
-    "path": "folders/Sprites/Resources.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprApple",

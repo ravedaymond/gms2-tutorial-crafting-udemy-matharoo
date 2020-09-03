@@ -1,8 +1,9 @@
 /// @description Insert description here
-// You can write your code in this editor
+// hp and max
 hp = 3;
 hpMax = 3;
-
+// Height of the hp bar being draw
 hpHeight = 2;
 
+// Distance from player to draw hp bar
 hpDist = 96;

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"473a1d4b-97d5-4a1f-80d3-2d581dd8475c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Resources",
-    "path": "folders/Sprites/Resources.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprIron",

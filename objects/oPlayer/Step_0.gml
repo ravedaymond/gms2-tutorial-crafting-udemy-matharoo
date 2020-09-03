@@ -53,4 +53,3 @@ if(xMove != 0 && sign(xMove) != mouseDir) {
 } else {
 	image_speed = 1;	
 }
-

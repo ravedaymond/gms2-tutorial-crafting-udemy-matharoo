@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprTree",
-    "path": "sprites/sprTree/sprTree.yy",
+    "name": "sprRockStone",
+    "path": "sprites/sprRockStone/sprRockStone.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oTree","path":"objects/oTree/oTree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oRockStone","path":"objects/oRockStone/oRockStone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +33,7 @@
     "path": "folders/Objects/World.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oTree",
+  "name": "oRockStone",
   "tags": [],
   "resourceType": "GMObject",
 }
