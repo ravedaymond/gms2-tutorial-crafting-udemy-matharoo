@@ -20,3 +20,7 @@ invList = ds_list_create();
 // Pause
 gamePaused = false;
 pauseSurface = -1;
+
+// Crafting Menu
+craftMenuScroll = 0;
+craftMenuHeight = 0;
