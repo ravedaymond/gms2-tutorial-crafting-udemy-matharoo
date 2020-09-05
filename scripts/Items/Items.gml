@@ -11,3 +11,28 @@ function createItem(item, name, sprite, recipe){
 	global.itemSprite[item] = sprite;
 	global.itemRecipe[item] = recipe;
 }
+
+/// @function getItemArray
+/// @param	{index}		item	The item array we wish to get.
+function getItemArray(item){
+	// Get list of item arrays
+	var list = oController.invList;
+	var listSize = ds_list_size(list);
+	
+	// Get array from list
+	for(var i = 0; i < listSize; i++) {
+		// Array data
+		var arr = list[| i];
+		
+		if(is_array(arr)) {
+			var arrItem = arr[0];
+			
+			// Check
+			if(arrItem == item) {
+				return arr;	
+			}
+		}
+	}
+	// Not Found
+	return -1;
+}

@@ -1,7 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function addInventoryItem(item, count){
+/// @function inventoryAddItem(item, count)
+/// @param	{index} item	The item being added.
+/// @param	{real}	count	Number to add of item.
+function inventoryAddItem(item, count){
 	
 	var invList = oController.invList;
 	// If item already exists in list

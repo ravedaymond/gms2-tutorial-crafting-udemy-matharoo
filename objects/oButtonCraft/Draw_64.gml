@@ -2,6 +2,11 @@
 // Inherit the parent event
 event_inherited();
 
+// Crafting animation
+if(craftAnim > 0) {
+	draw_rectangle(x, y, x+width*craftAnim, y+height, 0);	
+}
+
 var margin = 4;
 
 // Calculate image size

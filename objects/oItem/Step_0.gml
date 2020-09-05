@@ -3,7 +3,7 @@
 if(!collected && place_meeting(x, y, oPlayer)) {
 	
 	// Collected if added to inventory
-	collected = addInventoryItem(type, 1);
+	collected = inventoryAddItem(type, 1);
 }
 
 // If collected: fade away
