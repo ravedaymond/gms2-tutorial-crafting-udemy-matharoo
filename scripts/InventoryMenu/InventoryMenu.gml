@@ -15,8 +15,14 @@ function inventoryAddItem(item, count){
 		var arr = invList[| i];
 		
 		// Check item
-		if(arr[0] == item) {
+		if(is_array(arr) && arr[0] == item) {
 			arr[@ 1] += count;
+			return true;
+		} else 
+		// Insert into empty slot
+		if (!is_array(arr)) {
+			invList[| i] = [item, count];
+			
 			return true;
 		}
 	}
@@ -30,4 +36,13 @@ function inventoryAddItem(item, count){
 	var arr = [item, count];
 	ds_list_add(invList, arr);
 	return true;
+}
+
+/// @function inventoryDropItem(item)
+/// @param {index} item		The inventory position of the item to drop the stack of.
+function inventoryDropItem(item) {
+	var list = oController.invList;
+	
+	// Remove stack
+	list[| item] = -1;
 }

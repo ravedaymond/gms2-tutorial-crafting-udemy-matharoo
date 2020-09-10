@@ -53,3 +53,8 @@ if(xMove != 0 && sign(xMove) != mouseDir) {
 } else {
 	image_speed = 1;	
 }
+
+// Die
+if(hp <= 0) {
+	instance_destroy();	
+}
