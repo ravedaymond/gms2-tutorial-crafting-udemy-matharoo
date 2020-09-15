@@ -1,4 +1,7 @@
 /// @description 
+// Juice
+juiceCreate();
+
 type = -1;
 
 collected = false;

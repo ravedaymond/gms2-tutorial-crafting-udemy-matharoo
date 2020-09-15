@@ -1,9 +1,14 @@
 /// @description Destroy instance if no hp
+juiceStep();
+
 if(hp <= 0) {
 	instance_destroy();
 	
 	// How many resources to create
 	var resCount = choose(1, 1, 1, 1, 2, 2, 3);
+	if(self.resCount != -1) {
+		resCount =	self.resCount;
+	}
 	var resMax = array_length(res);
 	
 	repeat(resCount) {

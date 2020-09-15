@@ -1,4 +1,7 @@
 /// @description Updates every game "step"
+// Juice
+juiceStep();
+
 // Get Input
 var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
@@ -13,6 +16,13 @@ var yMove = down - up;
 // Calculate movement
 xSpd = xMove*spd;
 ySpd = yMove*spd;
+
+// Boost
+xSpd += round(boostX);
+ySpd += round(boostY);
+
+boostX = lerp(boostX, 0, 0.1);
+boostY = lerp(boostY, 0, 0.1);
 
 // Horizontal move
 if(collision(x+xSpd, y)) {
@@ -47,8 +57,8 @@ if(mouseDir != 0) {
 	image_xscale = mouseDir;	
 }
 
-// Animation Speed
-if(xMove != 0 && sign(xMove) != mouseDir) {
+// Animation Speed / Direction
+if(xSpd != 0 && sign(xSpd) != mouseDir) {
 	image_speed = -1;	
 } else {
 	image_speed = 1;	
@@ -57,4 +67,6 @@ if(xMove != 0 && sign(xMove) != mouseDir) {
 // Die
 if(hp <= 0) {
 	instance_destroy();	
+	
+	oController.alarm[0] = 60;
 }

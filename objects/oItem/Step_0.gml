@@ -1,9 +1,16 @@
 /// @description Allow collecting of item
+
+// Juice
+juiceStep();
+
 // Collision with player
 if(!collected && place_meeting(x, y, oPlayer)) {
 	
 	// Collected if added to inventory
 	collected = inventoryAddItem(type, 1);
+	
+	// Juice
+	juiceApplyScaling(xScale, yScale, 0.5, 1.5);
 }
 
 // If collected: fade away
@@ -26,5 +33,8 @@ if(z < 0) {
 	if(z >= 0) {
 		z = 0;
 		zSpd = 0;
+		
+		// Juice on fall
+		juiceApplyScaling(1.4, 0.7, 1, 1);
 	}
 }
