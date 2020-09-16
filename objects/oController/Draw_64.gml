@@ -20,3 +20,17 @@ with(oPlayer) {
 		draw_sprite(sprHeart, subImg, startX+dist*i, startY);
 	}
 }
+
+// 
+if(is_array(movingArray)) {
+	// Item data
+	var item = movingArray[0];
+	var spr = global.itemSprite[item];
+	
+	// Mouse position
+	var mouseX = device_mouse_x_to_gui(0);
+	var mouseY = device_mouse_y_to_gui(0);
+	
+	// Draw item
+	draw_sprite(spr, 0, mouseX, mouseY);
+}

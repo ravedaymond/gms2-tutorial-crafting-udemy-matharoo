@@ -6,7 +6,7 @@
     "path": "folders/Scripts/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "CraftingMenu",
+  "name": "InventoryButtons",
   "tags": [],
   "resourceType": "GMScript",
 }

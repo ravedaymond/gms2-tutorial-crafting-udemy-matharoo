@@ -18,3 +18,16 @@ if(placingMode && instance_exists(placingInst)) {
 		event_user(1);	
 	}
 }
+
+// Open Chest
+var chest = collision_circle(x, y, 12, oChestParent, false, false);
+
+if(instance_exists(chest)) {
+	// Show E key
+	showKey = sprButtonE;
+	
+	// Open chest
+	if(keyboard_check_pressed(ord("E"))) {
+		pauseGame(chest);	
+	}
+}

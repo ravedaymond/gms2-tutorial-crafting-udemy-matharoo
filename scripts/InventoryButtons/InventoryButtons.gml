@@ -38,3 +38,15 @@ function createButtonTitle(xPos, yPos, width, height, text) {
 	
 	return inst;
 }
+
+function createButtonMoveable(x, y, w, h, dsList, slot) {
+	// Create button
+	var inst = instance_create_depth(x, y, 0, oButtonInvMoveable);
+	
+	with(inst) {
+		width = w;
+		height = h;
+		list = dsList;
+		slotID = slot;
+	}
+}

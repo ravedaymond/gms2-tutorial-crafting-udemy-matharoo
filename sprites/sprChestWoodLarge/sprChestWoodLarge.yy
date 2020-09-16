@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"332d1479-e57b-4d37-a2f7-ac278465c832","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Resources",
-    "path": "folders/Sprites/Resources.yy",
+    "name": "Crafted",
+    "path": "folders/Sprites/Items/Crafted.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprChestWoodLarge",

@@ -21,6 +21,10 @@ invList = ds_list_create();
 gamePaused = false;
 pauseSurface = -1;
 
+// Chest
+chestID = noone;
+movingArray = -1;
+
 // Crafting Menu
 craftMenuScroll = 0;
 craftMenuHeight = 0;

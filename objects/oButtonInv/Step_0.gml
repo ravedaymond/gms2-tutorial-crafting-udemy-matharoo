@@ -1,4 +1,4 @@
-/// @description Control item dropping
+/// @description Control item dropping and placing
 #region Use Item
 if(hover && lClick) {
 	// Get array
@@ -37,22 +37,15 @@ if(hover && lClick) {
 				}
 			break;
 			
-			case ITEM.BLOCK_WOOD:
-				pauseGame();
-				with(oPlayer) {
-					placingObj = global.itemPlaceable[invItem];
-					event_user(0);
+			default:
+				if(global.itemPlaceable[invItem] != noone) {
+					pauseGame();
+					with(oPlayer) {
+						placingObj = global.itemPlaceable[invItem];
+						event_user(0);
+					}
+					used = true;
 				}
-				used = true;
-			break;
-			
-			case ITEM.ANGRY_STATUE:
-				pauseGame();
-				with(oPlayer) {
-					placingObj = global.itemPlaceable[invItem];
-					event_user(0);
-				}
-				used = true;
 			break;
 		}
 		

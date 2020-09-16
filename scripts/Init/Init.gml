@@ -18,7 +18,8 @@ enum ITEM {
 	SYRUP,
 	BLOCK_WOOD,
 	BLOCK_IRON,
-	ANGRY_STATUE
+	ANGRY_STATUE,
+	CHEST_WOOD
 }
 createItem(ITEM.APPLE, "Apple", sprApple, []);
 createItem(ITEM.ORANGE, "Orange", sprOrange, []);
@@ -44,6 +45,9 @@ createPlaceableItem(ITEM.ANGRY_STATUE, "Angry Statue", sprAngryStatue, [
 	[ITEM.STONE, 3]
 ], oAngryStatue);
 
+createPlaceableItem(ITEM.CHEST_WOOD, "Wooden Chest", sprChestWood, [
+	[ITEM.WOOD, 3]
+], oChestWood);
 
 // Inventory
 #macro INVENTORY_SIZE 12
@@ -59,6 +63,8 @@ global.craftingMenu = [
 	ITEM.BLOCK_IRON,
 	
 	"Statues",
-	ITEM.ANGRY_STATUE
+	ITEM.ANGRY_STATUE,
 	
-]
+	"Chests",
+	ITEM.CHEST_WOOD
+];

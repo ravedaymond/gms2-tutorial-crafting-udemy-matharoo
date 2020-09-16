@@ -1,6 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function pauseGame(){
+	
+	// Return if holding an item
+	if(is_array(oController.movingArray)) {
+		return;	
+	}
+	
 	with(oPlayer) {
 		if(placingMode) {
 			event_user(1);	
@@ -33,8 +39,13 @@ function pauseGame(){
 			// Copy application_surface
 			surface_copy(pauseSurface, 0, 0, application_surface);
 		
-			// Create inventory GUI
-			event_user(0);
-		}		
+			// Create Chest UI
+			if(argument_count > 0) {
+				chestID = argument[0];
+				event_user(2);
+			} else { // Create inventory GUI
+				event_user(0);	
+			}
+		}
 	}
 }
